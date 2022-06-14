@@ -1,20 +1,22 @@
+
+/*  le corps visivle de la page   HTML */
 body {
   text-align: center;
-  margin:0px 0px 0px 0px;
 
-/* background-color: brown; */
 }
+
+
+/*   Premier container */
 
 header{
-  background-color: white;
-  position: sticky;
-}
-
-.container{
-/*   background-color: red; */
-  display: flex ;
+display: flex ;
   justify-content: space-around;
-/* background-color: red; */
+  position: sticky;
+top: 0;
+background-color: white;
+box-shadow: inset;
+  
+
 }
 
 .unorderedOne{
@@ -34,35 +36,337 @@ ul a {
 }
 
 
-main{
-  
-  display: flex;
-  flex-direction: column;
-  margin:0px 200px 0px 200px;
-  align-items: center;
-  /* background-color: yellow; */
-  
-}
-
 .content{
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
- /*  */
- margin:0px 200px 0px 200px;
-
-/* background-color: blueviolet; */
+ flex-direction: column ;
+ justify-content: space-between;
+ margin-left: 350px;
+ margin-right: 300px;
+ 
 }
 
 .subContent{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+  
+}
+
+p{
+  margin-left: 60px;
+  
+}
+
+/*  Deuxième container  */
+
+.containerTwo{
   display: flex;
   flex-direction: row;
+   margin-left: 350px;
+   margin-right: 300px;
+  margin-top: 60px;
+}
+
+@keyframes fade {
+  From {
+  
+  Opacity : 0 ;
+  }
+  To {
+  Opacity : 1 ;
+  }
+  }
+.testingDiv{
+    Animation-name : fade ;
+    Animation-delay : 0s ;
+    Animation-duration : 3s ;
+
+    }
+    
+    .testingDiv2{
+      Animation-name : fade ;
+      Animation-delay : 0s ;
+      Animation-duration : 3s ;
+  
+      }
+      .testingDiv3{
+        Animation-name : fade ;
+        Animation-delay : 0s ;
+        Animation-duration : 3s ;
+    
+        }
+          
+
+.testingDiv{
+  
+  display:flex;
+  flex-direction: column;
+   
+   align-items: flex-start;
+  width: 300px;
+  height: 350px;
+  background-color: #47C2A3;
+  margin-right: 20px;
+  border-radius: 3%;
+  transition: top 5s ease;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.testingDiv2{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  height: 350px;
+  background-color: #3B68B0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 3%;
+  
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px
+}
+
+
+.testingDiv3{
+  display:flex;
+  flex-direction: column;
+  
+   align-items: flex-start;
+  width: 300px;
+  height: 390px;
+  background-color: #1C1B50;
+  margin-left: 20px;
+  border-radius: 3%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+
+.testingDiv:hover {
+background-color: #47C2A3;
+filter: opacity(90%);
+}
+.selection{
+  margin-left:40px;
+  margin-right:20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 50%;
+  border: none;
+  list-style-type:lower-roman;
+  
+
+  
+  }	
+
+  .testingDiv2:hover {
+    background-color:#3B68B0;
+    filter: opacity(90%);
+    }
+    select{
+      margin-left:30px;
+      margin-right:30px;
+      
+      }	
+
+      .testingDiv3:hover {
+        background-color: #1C1B50;
+        filter: opacity(90%);
+        }
+        select{
+          margin-left:30px;
+          margin-right:30px;
+          
+          }	
+h1{
+  height: 20px;
+  color: white;
+  font-weight: 50;
+}
+h2{
+  height: 100px;
+  color: white;
+  font-weight: lighter;
+  font-weight: 20;
+}
+
+.containerThree{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 150px;
+  /* margin-left: 30px; */
+}
+
+.subContainerThree{
+  display: flex;
+  flex-direction:row;
+  width: 50%;
+}
+.headingC3{
+color:    #47c2a3;;
+font-size: x-large;
+width: 30%;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+li{
+
+}
+
+
+
+
+.containerFour{
+ background-color: #90DAB6
+ ;
+  
+  display: flex;
+  flex-direction: row;
+justify-content: space-around;
  
-  color: gray;
+  left:0;
+  right: 0;
+
+  background-image: url("logo2.png");
+  background-repeat: no-repeat;
+  background-position-x: 10%;
+  background-position-y: 10%;
+
+height: 200%;
+}
+
+.subContainerFour1{
+  display: flex; 
+  flex-direction: column;
+  width: 50%;
+  
+}
+
+.subContainerFour2{
+  display: flex;
+   padding-top:50px;
+    width:50%;
+    justify-content: space-between;
+    
+    flex-direction: column;
+  
+   
+}
+.boxcontaner1{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  
+}
+.boxcontaner2{
+  display: flex;
+  flex-direction: row;
+  
+}
+ 
+.subContainerFour21{
+  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-right: 30px;
+  background-color: whitesmoke;
+  align-items: center;
+  border-radius: 5%;
+  padding-top: 40px
+}
+.subContainerFour22{
+  margin-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  padding-top: 40px;
+  width: 40%;
+  height: 60%;
+  background-color: whitesmoke;
+align-items: center;
+border-radius: 5%;
+}
+.subContainerFour23{
+  padding-top: 40px;
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-left: 15px;
+  background-color: whitesmoke;
+  align-items: center;
+  border-radius: 5%;
+  width: 35%;
+  height: 60;
+}
+.subContainerFour24{
+  margin-left: 15px;
+  margin-top: 0px;
+margin-bottom: 40px;  
+background-color: whitesmoke;
+align-items: center;
+border-radius: 5%;
+width: 40%;
+height: 70%;
+padding-top: 40px
+}
+
+
+.cards{
+  padding-top:50px;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  
+  border-radius:15px;
+  width: 1600px;
+  margin-left: 200px;
+  margin-right: -200px;
   
   
 }
-p{
-  margin:0px 200px 0px 200px;
+
+
+.card{
+  
+  width: 400px;
+  text-align: center;
+  margin-top:20px;
+  justify-content: start;
+   border-style: groove;
+  border-color: whitesmoke;
+  border-width: 0,1%;
+border-radius: 1%;
+margin-left: 40px;
 }
+.subcard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 50px;
+  width: 80%;
+  
+}
+
+.subcard2{
+  display: flex;
+  flex-direction: row;
+  
+ margin-left: 30px;
+  width: 120%;
+}
+
 
